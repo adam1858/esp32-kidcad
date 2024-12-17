@@ -1,0 +1,13 @@
+(module PinHeader_2x19_2.54mm (layer F.Cu) (tedit 5B42334C)
+  (fp_text reference REF** (at 0 -5) (layer F.SilkS) (effects (font (size 1 1))))
+  (fp_text value PinHeader_2x19_2.54mm (at 0 5) (layer F.Fab) (effects (font (size 1 1))))
+
+  ; Toto je jen příklad – neobsahuje skutečné souřadnice všech padů.
+  ; Skutečně bys musel vygenerovat 38 padů v rastru 2.54mm. 
+  ; Níže je ukázka jen dvou pinů. Opravdu to pak budeš muset doplnit.
+
+  (pad "1" thru_hole circle (at -2.54*0 0) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask))
+  (pad "2" thru_hole circle (at 2.54*0 2.54) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask))
+
+  ; ... doplň další pady pro všech 38 pinů ...
+)
