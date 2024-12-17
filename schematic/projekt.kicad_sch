@@ -1,1 +1,35 @@
+(kicad_sch (version 20211014) (generator kicad)
+  (template "Empty")
+  (sheet (number 1) (name ""))
+  (title_block
+    (title "Ukazkove Schema")
+    (company "My Company")
+  )
+
+  (symbol (lib_id "MyModules:ESP32_DevKitC_38pin") (at 0 0) (unit 1)
+    (property "Reference" "U1" (at 0 -5))
+    (property "Value" "ESP32_DevKitC_38pin" (at 0 -7))
+  )
+
+  (symbol (lib_id "MyModules:MAX31865_Module") (at 50 0) (unit 1)
+    (property "Reference" "U2" (at 50 -5))
+    (property "Value" "MAX31865_Module" (at 50 -7))
+  )
+
+  (symbol (lib_id "MyModules:Relay_Module") (at 0 30) (unit 1)
+    (property "Reference" "K1" (at 0 25))
+    (property "Value" "Relay_Module_5V" (at 0 23))
+  )
+
+  (symbol (lib_id "MyModules:LM358_Module") (at 50 30) (unit 1)
+    (property "Reference" "U3" (at 50 25))
+    (property "Value" "LM358_Module" (at 50 23))
+  )
+
+  (symbol (lib_id "MyModules:GM12864_59N_I2C_Display") (at 100 0) (unit 1)
+    (property "Reference" "U4" (at 100 -5))
+    (property "Value" "ST7567_Display" (at 100 -7))
+  )
+
+)
 
