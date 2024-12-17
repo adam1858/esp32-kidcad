@@ -1,1 +1,71 @@
+(kicad_symbol_lib (version 20211014) (generator kicad)
+  
+  (symbol "MyModules:ESP32_DevKitC_38pin"
+    (property "Reference" "U" (at 0 0 0))
+    (property "Value" "ESP32_DevKitC_38pin" (at 0 -2.54 0))
+    (property "Footprint" "MyModules:PinHeader_2x19_2.54mm" (at 0 0 0))
+    (property "Datasheet" "")
+    ; Zjednodušený symbol, jen pár pinů pro ukázku:
+    (pin passive "3V3" (at -5 0))
+    (pin passive "GND" (at -5 2.54))
+    (pin bidirectional "GPIO18_SCK" (at -5 5.08))
+    (pin bidirectional "GPIO19_MISO" (at -5 7.62))
+    (pin bidirectional "GPIO23_MOSI" (at -5 10.16))
+    (pin bidirectional "GPIO5_CS"   (at -5 12.7))
+    (pin bidirectional "GPIO21_SDA" (at 5 0))
+    (pin bidirectional "GPIO22_SCL" (at 5 2.54))
+    (pin bidirectional "GPIO13_RLY" (at 5 5.08))
+    (pin bidirectional "GPIO4_DALLAS" (at 5 7.62))
+    ; Přidej další piny podle potřeby
+  )
+
+  (symbol "MyModules:MAX31865_Module"
+    (property "Reference" "U" (at 0 0 0))
+    (property "Value" "MAX31865_Module" (at 0 -2.54 0))
+    (property "Footprint" "MyModules:PinHeader_1x6_2.54mm" (at 0 0 0))
+    (property "Datasheet" "")
+    (pin passive "VIN" (at -5 0))
+    (pin passive "GND" (at -5 2.54))
+    (pin passive "SCK" (at -5 5.08))
+    (pin passive "MISO" (at -5 7.62))
+    (pin passive "MOSI" (at -5 10.16))
+    (pin passive "CS" (at -5 12.7))
+  )
+
+  (symbol "MyModules:Relay_Module"
+    (property "Reference" "K" (at 0 0 0))
+    (property "Value" "Relay_Module_5V" (at 0 -2.54 0))
+    (property "Footprint" "MyModules:PinHeader_1x3_2.54mm" (at 0 0 0))
+    (property "Datasheet" "")
+    (pin passive "VCC" (at -5 0))
+    (pin passive "GND" (at -5 2.54))
+    (pin input "IN" (at -5 5.08))
+    ; Svorky relé (COM, NO, NC) pokud je modul má, můžeš přidat
+  )
+
+  (symbol "MyModules:LM358_Module"
+    (property "Reference" "U" (at 0 0 0))
+    (property "Value" "LM358_Module" (at 0 -2.54 0))
+    (property "Footprint" "MyModules:PinHeader_1x5_2.54mm" (at 0 0 0))
+    (property "Datasheet" "")
+    (pin passive "VCC" (at -5 0))
+    (pin passive "GND" (at -5 2.54))
+    (pin input "IN+" (at -5 5.08))
+    (pin input "IN-" (at -5 7.62))
+    (pin output "OUT" (at -5 10.16))
+  )
+
+  (symbol "MyModules:GM12864_59N_I2C_Display"
+    (property "Reference" "U" (at 0 0 0))
+    (property "Value" "ST7567_Display" (at 0 -2.54 0))
+    (property "Footprint" "MyModules:PinHeader_1x5_2.54mm" (at 0 0 0))
+    (property "Datasheet" "")
+    ; Piny dle popisu: VCC, GND, SCL, SDA, (případně RESET)
+    (pin passive "VCC" (at -5 0))
+    (pin passive "GND" (at -5 2.54))
+    (pin passive "SCL" (at -5 5.08))
+    (pin passive "SDA" (at -5 7.62))
+    (pin passive "RES" (at -5 10.16))
+  )
+)
 
